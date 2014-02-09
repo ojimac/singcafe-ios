@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.1.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.1.0):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.1.0)
+  - AFNetworking/Security (2.1.0)
+  - AFNetworking/Serialization (2.1.0)
+  - AFNetworking/UIKit (2.1.0):
+    - AFNetworking/NSURLConnection
+  - Facebook-iOS-SDK (3.12.0)
+  - MultibyteDescription (0.2)
+  - Parse-iOS-SDK (1.2.18):
+    - Facebook-iOS-SDK (~> 3.7)
+  - SVProgressHUD (1.0)
+  - TestFlightSDK (2.2.1-beta)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MultibyteDescription
+  - Parse-iOS-SDK
+  - SVProgressHUD
+  - TestFlightSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
+  MultibyteDescription: 414cb25e35f8b4e2c657d00135b7b83891d46c54
+  Parse-iOS-SDK: 48bfd538a107b6e1f29eebe59fa80c0f0b844dd1
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
+  TestFlightSDK: 4249c2f70e621bcfbdebf019073169c8fe36be13
+
+COCOAPODS: 0.29.0
