@@ -536,7 +536,7 @@
 				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
 				INFOPLIST_FILE = "singcafe/singcafe-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5B6A43DD-2576-4F38-8FDA-F70C7794120D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
