@@ -15,3 +15,11 @@
     #import <Foundation/Foundation.h>
     #import "SGCAppConstants.h"
 #endif
+
+#ifdef DEBUG
+#   define LOG(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#   define LOG_CURRENT_METHOD NSLog(@"%@/%@ [Line %d]", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__);
+#else
+#   define LOG(...)
+#   define LOG_CURRENT_METHOD
+#endif
