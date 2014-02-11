@@ -19,15 +19,17 @@
     [super viewDidLoad];
 
     CLLocationCoordinate2D co;
-    co.latitude  = 1.28668; // 経度
+    co.latitude  = 1.28668;    // 経度
     co.longitude = 103.853607; // 緯度
     [self.mapView setCenterCoordinate:co animated:NO];
 
     MKCoordinateRegion cr = self.mapView.region;
     cr.center = co;
-    cr.span.latitudeDelta  = 0.2;
-    cr.span.longitudeDelta = 0.2;
+    cr.span.latitudeDelta  = 0.1;
+    cr.span.longitudeDelta = 0.1;
+    [self.mapView setShowsUserLocation:YES];
     [self.mapView setRegion:cr animated:NO];
+    [self.mapView.userLocation addObserver:self forKeyPath:@"location" options:0 context:NULL];
 
 //    [PFAnalytics trackEvent:@"read" dimensions:dimensions];
 //    PFQuery *query = [PFQuery queryWithClassName:@"shops"];
@@ -44,7 +46,7 @@
         if (!error) {
             NSLog(@"Successfully retrieved %d scores.", objects.count);
             for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
+//                NSLog(@"%@", object.objectId);
             }
         } else {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -55,6 +57,16 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - MKMapKit Observer
+
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    LOG_CURRENT_METHOD
+    self.mapView.centerCoordinate = self.mapView.userLocation.location.coordinate;
+    // NOTE: 一度しか現在地に移動しないなら removeObserver する
+    [self.mapView.userLocation removeObserver:self forKeyPath:@"location"];
 }
 
 @end
