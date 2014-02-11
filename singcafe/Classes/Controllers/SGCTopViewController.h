@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "SGCBaseViewController.h"
 
-@interface SGCTopViewController : SGCBaseViewController
+@interface SGCTopViewController : SGCBaseViewController <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *currentLocationButton;

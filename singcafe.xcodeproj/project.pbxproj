@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D23CC2818AA3DB5006628C4 /* SGCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D23CC2718AA3DB5006628C4 /* SGCAnnotation.m */; };
 		0D49C7C318A773AA0031E8D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C218A773AA0031E8D2 /* Foundation.framework */; };
 		0D49C7C518A773AA0031E8D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C418A773AA0031E8D2 /* CoreGraphics.framework */; };
 		0D49C7C718A773AA0031E8D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C618A773AA0031E8D2 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D23CC2618AA3DB5006628C4 /* SGCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCAnnotation.h; sourceTree = "<group>"; };
+		0D23CC2718AA3DB5006628C4 /* SGCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCAnnotation.m; sourceTree = "<group>"; };
 		0D49C7BF18A773AA0031E8D2 /* singcafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = singcafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D49C7C218A773AA0031E8D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D49C7C418A773AA0031E8D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -222,6 +225,8 @@
 		0DF0822618A78D1E00619889 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0D23CC2618AA3DB5006628C4 /* SGCAnnotation.h */,
+				0D23CC2718AA3DB5006628C4 /* SGCAnnotation.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				0DF0823718A79A3600619889 /* SGCTopViewController.m in Sources */,
 				0D49C7D318A773AA0031E8D2 /* SGCAppDelegate.m in Sources */,
 				0D49C7CF18A773AA0031E8D2 /* main.m in Sources */,
+				0D23CC2818AA3DB5006628C4 /* SGCAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

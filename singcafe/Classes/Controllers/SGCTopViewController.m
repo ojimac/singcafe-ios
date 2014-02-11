@@ -7,6 +7,7 @@
 //
 
 #import "SGCTopViewController.h"
+#import "SGCAnnotation.h"
 
 @interface SGCTopViewController ()
 
@@ -32,21 +33,22 @@
     [self.mapView.userLocation addObserver:self forKeyPath:@"location" options:0 context:NULL];
 
 //    [PFAnalytics trackEvent:@"read" dimensions:dimensions];
-//    PFQuery *query = [PFQuery queryWithClassName:@"shops"];
-//    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-//        NSLog(@"object = %@", object);
-//    }];
-//    [query getObjectInBackgroundWithId:@"xWMyZ4YEGZ" block:^(PFObject *gameScore, NSError *error) {
-//        // Do something with the returned PFObject in the gameScore variable.
-//        NSLog(@"%@", gameScore);
-//    }];
+
     PFQuery *query = [PFQuery queryWithClassName:@"shops"];
     [query whereKey:@"name" notEqualTo:@""];
+    [query whereKey:@"activeFlag" equalTo:@YES];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"Successfully retrieved %d scores.", objects.count);
             for (PFObject *object in objects) {
-//                NSLog(@"%@", object.objectId);
+                NSLog(@"name = %@", object[@"name"]);
+                if (object[@"location"] != [NSNull null]) {
+                    SGCAnnotation* tt = [[SGCAnnotation alloc] init];
+                    PFGeoPoint *geo = object[@"location"];
+                    tt.coordinate = CLLocationCoordinate2DMake(geo.latitude, geo.longitude);
+                    tt.title = object[@"name"];
+                    [self.mapView addAnnotations:@[tt]];
+                }
             }
         } else {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
