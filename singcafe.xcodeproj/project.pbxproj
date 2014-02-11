@@ -15,13 +15,19 @@
 		0D49C7D318A773AA0031E8D2 /* SGCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C7D218A773AA0031E8D2 /* SGCAppDelegate.m */; };
 		0D49C7D618A773AB0031E8D2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D49C7D418A773AB0031E8D2 /* Main_iPhone.storyboard */; };
 		0D49C7D918A773AB0031E8D2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D49C7D718A773AB0031E8D2 /* Main_iPad.storyboard */; };
-		0D49C7DC18A773AB0031E8D2 /* SGCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C7DB18A773AB0031E8D2 /* SGCViewController.m */; };
 		0D49C7DE18A773AB0031E8D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D49C7DD18A773AB0031E8D2 /* Images.xcassets */; };
 		0D49C7E518A773AB0031E8D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7E418A773AB0031E8D2 /* XCTest.framework */; };
 		0D49C7E618A773AB0031E8D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C218A773AA0031E8D2 /* Foundation.framework */; };
 		0D49C7E718A773AB0031E8D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C618A773AA0031E8D2 /* UIKit.framework */; };
 		0D49C7EF18A773AB0031E8D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D49C7ED18A773AB0031E8D2 /* InfoPlist.strings */; };
 		0D49C7F118A773AB0031E8D2 /* singcafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C7F018A773AB0031E8D2 /* singcafeTests.m */; };
+		0DF0822A18A78E5400619889 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822918A78E5400619889 /* StoreKit.framework */; };
+		0DF0822C18A78E5F00619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
+		0DF0822D18A78E9700619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
+		0DF0822E18A78E9C00619889 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822918A78E5400619889 /* StoreKit.framework */; };
+		0DF0823018A792DD00619889 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822F18A792DD00619889 /* MapKit.framework */; };
+		0DF0823318A7983A00619889 /* SGCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0823218A7983A00619889 /* SGCBaseViewController.m */; };
+		0DF0823718A79A3600619889 /* SGCTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0823618A79A3600619889 /* SGCTopViewController.m */; };
 		ED2297567EA048A48D95AAFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11E28E1D3224664AD0A9459 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,14 +54,20 @@
 		0D49C7D218A773AA0031E8D2 /* SGCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGCAppDelegate.m; sourceTree = "<group>"; };
 		0D49C7D518A773AB0031E8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		0D49C7D818A773AB0031E8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		0D49C7DA18A773AB0031E8D2 /* SGCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGCViewController.h; sourceTree = "<group>"; };
-		0D49C7DB18A773AB0031E8D2 /* SGCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGCViewController.m; sourceTree = "<group>"; };
 		0D49C7DD18A773AB0031E8D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D49C7E318A773AB0031E8D2 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D49C7E418A773AB0031E8D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0D49C7EC18A773AB0031E8D2 /* singcafeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "singcafeTests-Info.plist"; sourceTree = "<group>"; };
 		0D49C7EE18A773AB0031E8D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D49C7F018A773AB0031E8D2 /* singcafeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singcafeTests.m; sourceTree = "<group>"; };
+		0DF0822918A78E5400619889 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0DF0822B18A78E5F00619889 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0DF0822F18A792DD00619889 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0DF0823118A7983A00619889 /* SGCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCBaseViewController.h; sourceTree = "<group>"; };
+		0DF0823218A7983A00619889 /* SGCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCBaseViewController.m; sourceTree = "<group>"; };
+		0DF0823418A7993700619889 /* SGCAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCAppConstants.h; sourceTree = "<group>"; };
+		0DF0823518A79A3600619889 /* SGCTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCTopViewController.h; sourceTree = "<group>"; };
+		0DF0823618A79A3600619889 /* SGCTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCTopViewController.m; sourceTree = "<group>"; };
 		CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D11E28E1D3224664AD0A9459 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF0823018A792DD00619889 /* MapKit.framework in Frameworks */,
+				0DF0822E18A78E9C00619889 /* StoreKit.framework in Frameworks */,
+				0DF0822D18A78E9700619889 /* Social.framework in Frameworks */,
 				0D49C7C518A773AA0031E8D2 /* CoreGraphics.framework in Frameworks */,
 				0D49C7C718A773AA0031E8D2 /* UIKit.framework in Frameworks */,
 				0D49C7C318A773AA0031E8D2 /* Foundation.framework in Frameworks */,
@@ -76,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF0822C18A78E5F00619889 /* Social.framework in Frameworks */,
+				0DF0822A18A78E5400619889 /* StoreKit.framework in Frameworks */,
 				0D49C7E518A773AB0031E8D2 /* XCTest.framework in Frameworks */,
 				0D49C7E718A773AB0031E8D2 /* UIKit.framework in Frameworks */,
 				0D49C7E618A773AB0031E8D2 /* Foundation.framework in Frameworks */,
@@ -108,6 +125,9 @@
 		0D49C7C118A773AA0031E8D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DF0822F18A792DD00619889 /* MapKit.framework */,
+				0DF0822B18A78E5F00619889 /* Social.framework */,
+				0DF0822918A78E5400619889 /* StoreKit.framework */,
 				0D49C7C218A773AA0031E8D2 /* Foundation.framework */,
 				0D49C7C418A773AA0031E8D2 /* CoreGraphics.framework */,
 				0D49C7C618A773AA0031E8D2 /* UIKit.framework */,
@@ -120,13 +140,13 @@
 		0D49C7C818A773AA0031E8D2 /* singcafe */ = {
 			isa = PBXGroup;
 			children = (
+				0DF0822218A78CBE00619889 /* Classes */,
+				0D49C7DD18A773AB0031E8D2 /* Images.xcassets */,
+				0D49C7D718A773AB0031E8D2 /* Main_iPad.storyboard */,
+				0D49C7D418A773AB0031E8D2 /* Main_iPhone.storyboard */,
+				0DF0823418A7993700619889 /* SGCAppConstants.h */,
 				0D49C7D118A773AA0031E8D2 /* SGCAppDelegate.h */,
 				0D49C7D218A773AA0031E8D2 /* SGCAppDelegate.m */,
-				0D49C7D418A773AB0031E8D2 /* Main_iPhone.storyboard */,
-				0D49C7D718A773AB0031E8D2 /* Main_iPad.storyboard */,
-				0D49C7DA18A773AB0031E8D2 /* SGCViewController.h */,
-				0D49C7DB18A773AB0031E8D2 /* SGCViewController.m */,
-				0D49C7DD18A773AB0031E8D2 /* Images.xcassets */,
 				0D49C7C918A773AA0031E8D2 /* Supporting Files */,
 			);
 			path = singcafe;
@@ -159,6 +179,65 @@
 				0D49C7ED18A773AB0031E8D2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DF0822218A78CBE00619889 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0822318A78D0B00619889 /* Controllers */,
+				0DF0822818A78D3100619889 /* Extensions */,
+				0DF0822618A78D1E00619889 /* Helpers */,
+				0DF0822418A78D1300619889 /* Models */,
+				0DF0822718A78D2300619889 /* Vendors */,
+				0DF0822518A78D1900619889 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0DF0822318A78D0B00619889 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0823118A7983A00619889 /* SGCBaseViewController.h */,
+				0DF0823218A7983A00619889 /* SGCBaseViewController.m */,
+				0DF0823518A79A3600619889 /* SGCTopViewController.h */,
+				0DF0823618A79A3600619889 /* SGCTopViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0DF0822418A78D1300619889 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0DF0822518A78D1900619889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DF0822618A78D1E00619889 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0DF0822718A78D2300619889 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		0DF0822818A78D3100619889 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D49C7DC18A773AB0031E8D2 /* SGCViewController.m in Sources */,
+				0DF0823318A7983A00619889 /* SGCBaseViewController.m in Sources */,
+				0DF0823718A79A3600619889 /* SGCTopViewController.m in Sources */,
 				0D49C7D318A773AA0031E8D2 /* SGCAppDelegate.m in Sources */,
 				0D49C7CF18A773AA0031E8D2 /* main.m in Sources */,
 			);
