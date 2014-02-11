@@ -69,4 +69,11 @@
     [self.mapView.userLocation removeObserver:self forKeyPath:@"location"];
 }
 
+#pragma mark - IBAction
+
+- (IBAction)pushedCurrentLocationButton:(id)sender
+{
+    NSLog(@"get current location");
+}
+
 @end

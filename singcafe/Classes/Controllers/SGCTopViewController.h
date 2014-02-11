@@ -13,5 +13,8 @@
 @interface SGCTopViewController : SGCBaseViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIButton *currentLocationButton;
+
+- (IBAction)pushedCurrentLocationButton:(id)sender;
 
 @end
