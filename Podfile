@@ -2,6 +2,7 @@ platform :ios, '7.0'
 
 pod 'AFNetworking'
 pod 'MultibyteDescription'
+pod 'JASidePanels'
 pod 'Parse-iOS-SDK'
 pod 'SVProgressHUD'
 pod 'TestFlightSDK'

@@ -18,6 +18,7 @@ PODS:
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
   - Facebook-iOS-SDK (3.12.0)
+  - JASidePanels (1.3.2)
   - MultibyteDescription (0.2)
   - Parse-iOS-SDK (1.2.18):
     - Facebook-iOS-SDK (~> 3.7)
@@ -26,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - JASidePanels
   - MultibyteDescription
   - Parse-iOS-SDK
   - SVProgressHUD
@@ -34,6 +36,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
+  JASidePanels: c0e642a7311ec9cc9adfa616fa4a795e4e169f20
   MultibyteDescription: 414cb25e35f8b4e2c657d00135b7b83891d46c54
   Parse-iOS-SDK: 48bfd538a107b6e1f29eebe59fa80c0f0b844dd1
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1

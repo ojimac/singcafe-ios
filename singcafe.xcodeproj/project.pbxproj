@@ -22,6 +22,8 @@
 		0D49C7E718A773AB0031E8D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D49C7C618A773AA0031E8D2 /* UIKit.framework */; };
 		0D49C7EF18A773AB0031E8D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D49C7ED18A773AB0031E8D2 /* InfoPlist.strings */; };
 		0D49C7F118A773AB0031E8D2 /* singcafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C7F018A773AB0031E8D2 /* singcafeTests.m */; };
+		0DC5739218BA01B2000C64D1 /* SGCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */; };
+		0DC5739518BA07A8000C64D1 /* SGCSlidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */; };
 		0DF0822A18A78E5400619889 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822918A78E5400619889 /* StoreKit.framework */; };
 		0DF0822C18A78E5F00619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
 		0DF0822D18A78E9700619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
@@ -63,6 +65,10 @@
 		0D49C7EC18A773AB0031E8D2 /* singcafeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "singcafeTests-Info.plist"; sourceTree = "<group>"; };
 		0D49C7EE18A773AB0031E8D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D49C7F018A773AB0031E8D2 /* singcafeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singcafeTests.m; sourceTree = "<group>"; };
+		0DC5739018BA01B2000C64D1 /* SGCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCMenuViewController.h; sourceTree = "<group>"; };
+		0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCMenuViewController.m; sourceTree = "<group>"; };
+		0DC5739318BA07A8000C64D1 /* SGCSlidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCSlidePanelController.h; sourceTree = "<group>"; };
+		0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCSlidePanelController.m; sourceTree = "<group>"; };
 		0DF0822918A78E5400619889 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0DF0822B18A78E5F00619889 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0DF0822F18A792DD00619889 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -204,6 +210,10 @@
 				0DF0823218A7983A00619889 /* SGCBaseViewController.m */,
 				0DF0823518A79A3600619889 /* SGCTopViewController.h */,
 				0DF0823618A79A3600619889 /* SGCTopViewController.m */,
+				0DC5739018BA01B2000C64D1 /* SGCMenuViewController.h */,
+				0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */,
+				0DC5739318BA07A8000C64D1 /* SGCSlidePanelController.h */,
+				0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,6 +400,8 @@
 				0DF0823318A7983A00619889 /* SGCBaseViewController.m in Sources */,
 				0DF0823718A79A3600619889 /* SGCTopViewController.m in Sources */,
 				0D49C7D318A773AA0031E8D2 /* SGCAppDelegate.m in Sources */,
+				0DC5739218BA01B2000C64D1 /* SGCMenuViewController.m in Sources */,
+				0DC5739518BA07A8000C64D1 /* SGCSlidePanelController.m in Sources */,
 				0D49C7CF18A773AA0031E8D2 /* main.m in Sources */,
 				0D23CC2818AA3DB5006628C4 /* SGCAnnotation.m in Sources */,
 			);

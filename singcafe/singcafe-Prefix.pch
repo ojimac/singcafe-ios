@@ -23,3 +23,5 @@
 #   define LOG(...)
 #   define LOG_CURRENT_METHOD
 #endif
+
+#define IS_IPAD   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
