@@ -9,6 +9,7 @@
 #import "SGCAppDelegate.h"
 
 // Vendor
+#import <GoogleMaps/GoogleMaps.h>
 #import <Parse/Parse.h>
 
 @implementation SGCAppDelegate
@@ -25,6 +26,9 @@
                   clientKey:@"XyjSE15GQ22ST9SdDzcvEkxemGihjHVJ5hkSoKNR"];
 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    // Google Maps
+    [GMSServices provideAPIKey:@"AIzaSyDyteie6SK_myODykex5CesX6n9FNTcUt0"];
 
     return YES;
 }

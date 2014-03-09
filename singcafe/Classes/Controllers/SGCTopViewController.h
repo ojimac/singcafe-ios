@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 #import "SGCBaseViewController.h"
 
-@interface SGCTopViewController : SGCBaseViewController <MKMapViewDelegate>
+@interface SGCTopViewController : SGCBaseViewController <GMSMapViewDelegate>
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *currentLocationButton;
 
 - (IBAction)pushedCurrentLocationButton:(id)sender;
