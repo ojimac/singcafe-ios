@@ -33,7 +33,7 @@
     [query whereKey:@"activeFlag" equalTo:@YES];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            NSLog(@"Successfully retrieved %@ scores.", @(objects.count));
             for (PFObject *object in objects) {
                 NSLog(@"name = %@", object[@"name"]);
                 if (object[@"location"] != [NSNull null]) {
