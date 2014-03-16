@@ -24,6 +24,9 @@
 		0D49C7F118A773AB0031E8D2 /* singcafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C7F018A773AB0031E8D2 /* singcafeTests.m */; };
 		0DC5739218BA01B2000C64D1 /* SGCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */; };
 		0DC5739518BA07A8000C64D1 /* SGCSlidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */; };
+		0DEE31F518D21257003954B7 /* SGCMarker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE31F418D21257003954B7 /* SGCMarker.xib */; };
+		0DEE31F718D21266003954B7 /* SGCMarker-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE31F618D21266003954B7 /* SGCMarker-iPad.xib */; };
+		0DEE31FA18D21286003954B7 /* SGCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE31F918D21286003954B7 /* SGCMarker.m */; };
 		0DF0822A18A78E5400619889 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822918A78E5400619889 /* StoreKit.framework */; };
 		0DF0822C18A78E5F00619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
 		0DF0822D18A78E9700619889 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822B18A78E5F00619889 /* Social.framework */; };
@@ -69,6 +72,10 @@
 		0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCMenuViewController.m; sourceTree = "<group>"; };
 		0DC5739318BA07A8000C64D1 /* SGCSlidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCSlidePanelController.h; sourceTree = "<group>"; };
 		0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCSlidePanelController.m; sourceTree = "<group>"; };
+		0DEE31F418D21257003954B7 /* SGCMarker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGCMarker.xib; sourceTree = "<group>"; };
+		0DEE31F618D21266003954B7 /* SGCMarker-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SGCMarker-iPad.xib"; sourceTree = "<group>"; };
+		0DEE31F818D21286003954B7 /* SGCMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCMarker.h; sourceTree = "<group>"; };
+		0DEE31F918D21286003954B7 /* SGCMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCMarker.m; sourceTree = "<group>"; };
 		0DF0822918A78E5400619889 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0DF0822B18A78E5F00619889 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0DF0822F18A792DD00619889 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -228,6 +235,10 @@
 		0DF0822518A78D1900619889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DEE31F418D21257003954B7 /* SGCMarker.xib */,
+				0DEE31F618D21266003954B7 /* SGCMarker-iPad.xib */,
+				0DEE31F818D21286003954B7 /* SGCMarker.h */,
+				0DEE31F918D21286003954B7 /* SGCMarker.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,8 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D49C7D918A773AB0031E8D2 /* Main_iPad.storyboard in Resources */,
+				0DEE31F718D21266003954B7 /* SGCMarker-iPad.xib in Resources */,
 				0D49C7DE18A773AB0031E8D2 /* Images.xcassets in Resources */,
 				0D49C7D618A773AB0031E8D2 /* Main_iPhone.storyboard in Resources */,
+				0DEE31F518D21257003954B7 /* SGCMarker.xib in Resources */,
 				0D49C7CD18A773AA0031E8D2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +415,7 @@
 				0D49C7D318A773AA0031E8D2 /* SGCAppDelegate.m in Sources */,
 				0DC5739218BA01B2000C64D1 /* SGCMenuViewController.m in Sources */,
 				0DC5739518BA07A8000C64D1 /* SGCSlidePanelController.m in Sources */,
+				0DEE31FA18D21286003954B7 /* SGCMarker.m in Sources */,
 				0D49C7CF18A773AA0031E8D2 /* main.m in Sources */,
 				0D23CC2818AA3DB5006628C4 /* SGCAnnotation.m in Sources */,
 			);
