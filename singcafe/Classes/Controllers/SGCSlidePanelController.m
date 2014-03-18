@@ -16,7 +16,11 @@
 
 -(void) awakeFromNib
 {
-    self.leftGapPercentage = .3f;
+    if (IS_IPAD) {
+        self.leftGapPercentage = .3f;
+    } else {
+        self.leftGapPercentage = .8f;
+    }
 
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"SGCMenuViewController"]];
     [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"SGCTopNavi"]];
