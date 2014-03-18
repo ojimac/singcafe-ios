@@ -21,6 +21,10 @@
 {
     [super viewDidLoad];
 
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar setTranslucent:YES];
+
     CLLocationCoordinate2D co;
 //    co.latitude  = 1.28668;    // 経度
 //    co.longitude = 103.853607; // 緯度
