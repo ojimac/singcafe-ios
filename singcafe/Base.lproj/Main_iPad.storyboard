@@ -68,19 +68,10 @@
                                     <action selector="pushedCurrentLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qn-cR-SW8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-8O-jou">
-                                <rect key="frame" x="10" y="30" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="List">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x1o-cP-Jxp">
-                        <barButtonItem key="leftBarButtonItem" image="List" id="aRP-UA-IXu"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="x1o-cP-Jxp"/>
                     <connections>
                         <outlet property="currentLocationButton" destination="fQ3-d1-VBV" id="9Ey-eA-Crs"/>
                         <outlet property="mapView" destination="9bm-cc-Ko9" id="OAc-ct-JSM"/>
@@ -107,7 +98,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="List" width="27" height="23"/>
         <image name="Near_Me" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

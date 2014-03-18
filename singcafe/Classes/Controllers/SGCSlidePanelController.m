@@ -16,6 +16,8 @@
 
 -(void) awakeFromNib
 {
+    self.leftGapPercentage = .3f;
+
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"SGCMenuViewController"]];
     [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"SGCTopNavi"]];
 }
@@ -23,6 +25,13 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark -
+
++ (UIImage *)defaultImage
+{
+    return [UIImage imageNamed:@"List"];
 }
 
 @end
