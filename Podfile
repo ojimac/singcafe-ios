@@ -5,6 +5,7 @@ pod 'MultibyteDescription'
 pod 'JASidePanels'
 pod 'Parse-iOS-SDK'
 pod 'TestFlightSDK'
+pod 'TTTAttributedLabel'
 
 # target 'UnitTests' do
 #   pod 'OCMock'

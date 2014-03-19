@@ -1,11 +1,12 @@
 PODS:
   - Facebook-iOS-SDK (3.13.0)
-  - Google-Maps-iOS-SDK (1.7.1)
+  - Google-Maps-iOS-SDK (1.7.2)
   - JASidePanels (1.3.2)
   - MultibyteDescription (0.2)
   - Parse-iOS-SDK (1.2.18):
     - Facebook-iOS-SDK (~> 3.7)
   - TestFlightSDK (3.0.0)
+  - TTTAttributedLabel (1.9.1)
 
 DEPENDENCIES:
   - Google-Maps-iOS-SDK
@@ -13,13 +14,15 @@ DEPENDENCIES:
   - MultibyteDescription
   - Parse-iOS-SDK
   - TestFlightSDK
+  - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: 5788541337dc88265bc940cb5ffb05915f9b64e3
-  Google-Maps-iOS-SDK: d639bde14855e1028aad16aaea26ae09bfc06ae9
+  Google-Maps-iOS-SDK: 5ac063b3d020b6a7f91dcbf59b3b0e3c17170d27
   JASidePanels: c0e642a7311ec9cc9adfa616fa4a795e4e169f20
   MultibyteDescription: 414cb25e35f8b4e2c657d00135b7b83891d46c54
   Parse-iOS-SDK: 48bfd538a107b6e1f29eebe59fa80c0f0b844dd1
   TestFlightSDK: 71e3e78d3a46144dbad975a4bf80a14dae6a818a
+  TTTAttributedLabel: 3299d80e6cc066676fd6ac44276a2b0baaa1e965
 
 COCOAPODS: 0.29.0

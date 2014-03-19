@@ -8,31 +8,49 @@
 
 #import "SGCMenuViewController.h"
 
-@interface SGCMenuViewController ()
+// Vendor
+#import "TTTAttributedLabel.h"
+
+@interface SGCMenuViewController () <TTTAttributedLabelDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *menuAll;
+
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *menuWiFiLabel;
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *menuSocketLabel;
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *menuWorkLabel;
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *menuSoCalmLabel;
+
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *beerLabel;
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *feedbackLabel;
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *reviewLabel;
 
 @end
 
 @implementation SGCMenuViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self _setupLabels];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - TTTAttributedLabelDelegate
+
+- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url
+{
+
+}
+
+#pragma mark - private
+
+- (void)_setupLabels
+{
+
 }
 
 @end

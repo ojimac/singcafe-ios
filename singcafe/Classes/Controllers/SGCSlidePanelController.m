@@ -17,7 +17,7 @@
 -(void) awakeFromNib
 {
     if (IS_IPAD) {
-        self.leftGapPercentage = .3f;
+        self.leftGapPercentage = .4f;
     } else {
         self.leftGapPercentage = .8f;
     }
@@ -36,6 +36,11 @@
 + (UIImage *)defaultImage
 {
     return [UIImage imageNamed:@"List"];
+}
+
+- (void)stylePanel:(UIView *)panel {
+    panel.layer.cornerRadius = 0.0f;
+    panel.clipsToBounds = NO;
 }
 
 @end
