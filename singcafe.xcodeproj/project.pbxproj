@@ -557,6 +557,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: keita ojima (DEU3R95FP4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: keita ojima (DEU3R95FP4)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
 				INFOPLIST_FILE = "singcafe/singcafe-Info.plist";
