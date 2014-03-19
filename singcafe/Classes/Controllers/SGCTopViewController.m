@@ -50,7 +50,6 @@
                     PFGeoPoint *geo = object[@"location"];
 
                     GMSMarker *marker = [[GMSMarker alloc] init];
-                    marker.icon       = [UIImage imageNamed:@"Map_Pin"];
                     marker.position   = CLLocationCoordinate2DMake(geo.latitude, geo.longitude);
                     marker.userData   = object;
                     marker.map        = weakMapView;
