@@ -43,9 +43,9 @@
     [query whereKey:@"activeFlag" equalTo:@YES];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            NSLog(@"Successfully retrieved %@ scores.", @(objects.count));
+            LOG(@"Successfully retrieved %@ scores.", @(objects.count));
             for (PFObject *object in objects) {
-                NSLog(@"name = %@", object[@"name"]);
+                LOG(@"name = %@", object[@"name"]);
                 if (object[@"location"] != [NSNull null]) {
                     PFGeoPoint *geo = object[@"location"];
 
@@ -57,7 +57,7 @@
                 }
             }
         } else {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            LOG(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
 }
@@ -93,7 +93,7 @@
 
 - (IBAction)pushedCurrentLocationButton:(id)sender
 {
-    NSLog(@"get current location");
+    LOG(@"get current location");
 }
 
 @end

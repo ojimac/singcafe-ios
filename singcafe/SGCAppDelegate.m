@@ -64,7 +64,7 @@
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
 {
-    NSLog(@"push notification error = %@", error.localizedDescription);
+    LOG(@"push notification error = %@", error.localizedDescription);
 }
 
 @end
