@@ -10,7 +10,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "SGCBaseViewController.h"
 
-@interface SGCTopViewController : SGCBaseViewController <GMSMapViewDelegate>
+@interface SGCTopViewController : SGCBaseViewController
 
 @property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *currentLocationButton;

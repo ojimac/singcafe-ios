@@ -4,6 +4,7 @@ pod 'Google-Maps-iOS-SDK'
 pod 'MultibyteDescription'
 pod 'JASidePanels'
 pod 'Parse-iOS-SDK'
+pod 'SVWebViewController'
 pod 'TTTAttributedLabel'
 
 # target 'UnitTests' do

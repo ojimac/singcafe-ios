@@ -11,7 +11,10 @@
 #import "SGCAnnotation.h"
 #import "SGCMarker.h"
 
-@interface SGCTopViewController ()
+// Vendor
+#import "SVWebViewController.h"
+
+@interface SGCTopViewController () <GMSMapViewDelegate>
 
 @end
 
@@ -88,6 +91,20 @@
 
     return view;
 }
+
+- (void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker
+{
+    LOG(@"userData = %@", marker.userData);
+
+    NSURL *url = [NSURL URLWithString:marker.userData[@"url"]];
+    LOG(@"url = %@", url);
+
+    SVModalWebViewController *vc = [[SVModalWebViewController alloc] initWithURL:url];
+    vc.preferredContentSize = CGSizeMake(kMarkerModalSize, kMarkerModalSize);
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 #pragma mark - IBAction
 
 - (IBAction)pushedCurrentLocationButton:(id)sender
