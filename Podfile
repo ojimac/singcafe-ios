@@ -2,10 +2,10 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-pod 'Google-Maps-iOS-SDK'
+pod 'GoogleMaps'
 pod 'MultibyteDescription'
 pod 'JASidePanels'
-pod 'Parse-iOS-SDK'
+pod 'Parse'
 pod 'SVWebViewController'
 pod 'TTTAttributedLabel'
 
