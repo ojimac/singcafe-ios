@@ -34,7 +34,7 @@
 		0DF0823018A792DD00619889 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0822F18A792DD00619889 /* MapKit.framework */; };
 		0DF0823318A7983A00619889 /* SGCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0823218A7983A00619889 /* SGCBaseViewController.m */; };
 		0DF0823718A79A3600619889 /* SGCTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0823618A79A3600619889 /* SGCTopViewController.m */; };
-		ED2297567EA048A48D95AAFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11E28E1D3224664AD0A9459 /* libPods.a */; };
+		A7933000B8F3CA7C0EF3B10E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3982FDF0D745CA3AFF3769 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +84,9 @@
 		0DF0823418A7993700619889 /* SGCAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCAppConstants.h; sourceTree = "<group>"; };
 		0DF0823518A79A3600619889 /* SGCTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCTopViewController.h; sourceTree = "<group>"; };
 		0DF0823618A79A3600619889 /* SGCTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCTopViewController.m; sourceTree = "<group>"; };
-		CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		D11E28E1D3224664AD0A9459 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3982FDF0D745CA3AFF3769 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FA11781FE8E00F8566E7AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8FF492C958472D501886BD31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +100,7 @@
 				0D49C7C518A773AA0031E8D2 /* CoreGraphics.framework in Frameworks */,
 				0D49C7C718A773AA0031E8D2 /* UIKit.framework in Frameworks */,
 				0D49C7C318A773AA0031E8D2 /* Foundation.framework in Frameworks */,
-				ED2297567EA048A48D95AAFB /* libPods.a in Frameworks */,
+				A7933000B8F3CA7C0EF3B10E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +126,7 @@
 				0D49C7EA18A773AB0031E8D2 /* UnitTests */,
 				0D49C7C118A773AA0031E8D2 /* Frameworks */,
 				0D49C7C018A773AA0031E8D2 /* Products */,
-				CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */,
+				6A58D667765D239F7E84F3CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,7 +149,7 @@
 				0D49C7C418A773AA0031E8D2 /* CoreGraphics.framework */,
 				0D49C7C618A773AA0031E8D2 /* UIKit.framework */,
 				0D49C7E418A773AB0031E8D2 /* XCTest.framework */,
-				D11E28E1D3224664AD0A9459 /* libPods.a */,
+				2E3982FDF0D745CA3AFF3769 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,6 +267,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6A58D667765D239F7E84F3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF492C958472D501886BD31 /* Pods.debug.xcconfig */,
+				56FA11781FE8E00F8566E7AE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +288,7 @@
 				0D49C7BC18A773AA0031E8D2 /* Frameworks */,
 				0D49C7BD18A773AA0031E8D2 /* Resources */,
 				764DBE12159B47DC8B45BDEA /* Copy Pods Resources */,
+				928F4FF8B9452EAB1153C195 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +411,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928F4FF8B9452EAB1153C195 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -550,7 +576,7 @@
 		};
 		0D49C7F518A773AB0031E8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */;
+			baseConfigurationReference = 8FF492C958472D501886BD31 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -569,7 +595,7 @@
 		};
 		0D49C7F618A773AB0031E8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */;
+			baseConfigurationReference = 56FA11781FE8E00F8566E7AE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -587,7 +613,6 @@
 		};
 		0D49C7F818A773AB0031E8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE3D963801A44D2C8EE1F158 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/singcafe.app/singcafe";
 				FRAMEWORK_SEARCH_PATHS = (

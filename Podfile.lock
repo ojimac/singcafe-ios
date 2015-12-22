@@ -17,12 +17,12 @@ DEPENDENCIES:
   - TTTAttributedLabel
 
 SPEC CHECKSUMS:
-  Facebook-iOS-SDK: 5788541337dc88265bc940cb5ffb05915f9b64e3
-  Google-Maps-iOS-SDK: 5ac063b3d020b6a7f91dcbf59b3b0e3c17170d27
-  JASidePanels: c0e642a7311ec9cc9adfa616fa4a795e4e169f20
-  MultibyteDescription: 414cb25e35f8b4e2c657d00135b7b83891d46c54
-  Parse-iOS-SDK: 48bfd538a107b6e1f29eebe59fa80c0f0b844dd1
-  SVWebViewController: e576371f7015bce92c97c304c32336700064847b
-  TTTAttributedLabel: 3299d80e6cc066676fd6ac44276a2b0baaa1e965
+  Facebook-iOS-SDK: 3697cc9b748cc10809ad1f0fb1034cdf15805407
+  Google-Maps-iOS-SDK: 64e696638bb64d28fa2d51390b4b9aaad98d11cf
+  JASidePanels: c8f5b130e18d51ee3de988d1c1fad2f88e0b0d21
+  MultibyteDescription: 96a5119f883fb792cedfbc320fbe921b2adc9216
+  Parse-iOS-SDK: 0fd9a812bb00e38f60bbdb845074455a6ae9a902
+  SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
+  TTTAttributedLabel: a2cd8d5c5b83163bcc2d67d44825852749e0b45c
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.39.0
