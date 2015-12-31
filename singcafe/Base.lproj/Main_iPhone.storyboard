@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="haR-7J-NMA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="haR-7J-NMA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="98a-WN-FeS">
             <objects>
                 <navigationController storyboardIdentifier="SGCTopNavi" definesPresentationContext="YES" id="L9m-Qb-syL" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aca-hZ-I3L">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -31,14 +34,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-Or-4Ex" customClass="GMSMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-Or-4Ex" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQh-l4-RXB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQh-l4-RXB">
                                 <rect key="frame" x="285" y="533" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="S0v-pk-sLz"/>
+                                    <constraint firstAttribute="width" constant="25" id="fWt-cF-dsp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="Near_Me">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,8 +54,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wtp-Lq-yaH" firstAttribute="top" secondItem="EoN-Or-4Ex" secondAttribute="bottom" id="Te5-ii-Yt2"/>
+                            <constraint firstItem="EoN-Or-4Ex" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="UET-Tf-CoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="EoN-Or-4Ex" secondAttribute="trailing" id="Yws-aW-r1N"/>
+                            <constraint firstItem="EoN-Or-4Ex" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="egS-XQ-g3P"/>
+                            <constraint firstItem="Wtp-Lq-yaH" firstAttribute="top" secondItem="YQh-l4-RXB" secondAttribute="bottom" constant="10" id="kQd-A3-Nai"/>
+                            <constraint firstAttribute="trailing" secondItem="YQh-l4-RXB" secondAttribute="trailing" constant="10" id="m5e-Ta-8au"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pRp-33-x7y"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="currentLocationButton" destination="YQh-l4-RXB" id="7l8-dn-eCg"/>
                         <outlet property="mapView" destination="EoN-Or-4Ex" id="J4Q-XT-awR"/>
@@ -92,7 +107,6 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-cN-gwY">
                                 <rect key="frame" x="139" y="273" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,9 +123,4 @@
     <resources>
         <image name="Near_Me" width="25" height="25"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

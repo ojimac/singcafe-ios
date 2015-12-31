@@ -122,11 +122,11 @@
 		0D49C7B618A773AA0031E8D2 = {
 			isa = PBXGroup;
 			children = (
-				0D49C7C818A773AA0031E8D2 /* singcafe */,
-				0D49C7EA18A773AB0031E8D2 /* UnitTests */,
 				0D49C7C118A773AA0031E8D2 /* Frameworks */,
-				0D49C7C018A773AA0031E8D2 /* Products */,
 				6A58D667765D239F7E84F3CD /* Pods */,
+				0D49C7C018A773AA0031E8D2 /* Products */,
+				0D49C7EA18A773AB0031E8D2 /* UnitTests */,
+				0D49C7C818A773AA0031E8D2 /* singcafe */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,13 +158,13 @@
 			isa = PBXGroup;
 			children = (
 				0DF0822218A78CBE00619889 /* Classes */,
+				0D49C7C918A773AA0031E8D2 /* Supporting Files */,
 				0D49C7DD18A773AB0031E8D2 /* Images.xcassets */,
 				0D49C7D718A773AB0031E8D2 /* Main_iPad.storyboard */,
 				0D49C7D418A773AB0031E8D2 /* Main_iPhone.storyboard */,
 				0DF0823418A7993700619889 /* SGCAppConstants.h */,
 				0D49C7D118A773AA0031E8D2 /* SGCAppDelegate.h */,
 				0D49C7D218A773AA0031E8D2 /* SGCAppDelegate.m */,
-				0D49C7C918A773AA0031E8D2 /* Supporting Files */,
 			);
 			path = singcafe;
 			sourceTree = "<group>";
@@ -172,19 +172,19 @@
 		0D49C7C918A773AA0031E8D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D49C7CA18A773AA0031E8D2 /* singcafe-Info.plist */,
 				0D49C7CB18A773AA0031E8D2 /* InfoPlist.strings */,
 				0D49C7CE18A773AA0031E8D2 /* main.m */,
+				0D49C7CA18A773AA0031E8D2 /* singcafe-Info.plist */,
 				0D49C7D018A773AA0031E8D2 /* singcafe-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0D49C7EA18A773AB0031E8D2 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				0D49C7F018A773AB0031E8D2 /* singcafeTests.m */,
 				0D49C7EB18A773AB0031E8D2 /* Supporting Files */,
+				0D49C7F018A773AB0031E8D2 /* singcafeTests.m */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -192,10 +192,10 @@
 		0D49C7EB18A773AB0031E8D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D49C7EC18A773AB0031E8D2 /* singcafeTests-Info.plist */,
 				0D49C7ED18A773AB0031E8D2 /* InfoPlist.strings */,
+				0D49C7EC18A773AB0031E8D2 /* singcafeTests-Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0DF0822218A78CBE00619889 /* Classes */ = {
@@ -216,12 +216,12 @@
 			children = (
 				0DF0823118A7983A00619889 /* SGCBaseViewController.h */,
 				0DF0823218A7983A00619889 /* SGCBaseViewController.m */,
-				0DF0823518A79A3600619889 /* SGCTopViewController.h */,
-				0DF0823618A79A3600619889 /* SGCTopViewController.m */,
 				0DC5739018BA01B2000C64D1 /* SGCMenuViewController.h */,
 				0DC5739118BA01B2000C64D1 /* SGCMenuViewController.m */,
 				0DC5739318BA07A8000C64D1 /* SGCSlidePanelController.h */,
 				0DC5739418BA07A8000C64D1 /* SGCSlidePanelController.m */,
+				0DF0823518A79A3600619889 /* SGCTopViewController.h */,
+				0DF0823618A79A3600619889 /* SGCTopViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,10 +236,10 @@
 		0DF0822518A78D1900619889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0DEE31F418D21257003954B7 /* SGCMarker.xib */,
 				0DEE31F618D21266003954B7 /* SGCMarker-iPad.xib */,
 				0DEE31F818D21286003954B7 /* SGCMarker.h */,
 				0DEE31F918D21286003954B7 /* SGCMarker.m */,
+				0DEE31F418D21257003954B7 /* SGCMarker.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -472,6 +472,7 @@
 				0D49C7CC18A773AA0031E8D2 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		0D49C7D418A773AB0031E8D2 /* Main_iPhone.storyboard */ = {
@@ -480,6 +481,7 @@
 				0D49C7D518A773AB0031E8D2 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		0D49C7D718A773AB0031E8D2 /* Main_iPad.storyboard */ = {
@@ -488,6 +490,7 @@
 				0D49C7D818A773AB0031E8D2 /* Base */,
 			);
 			name = Main_iPad.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		0D49C7ED18A773AB0031E8D2 /* InfoPlist.strings */ = {
@@ -496,6 +499,7 @@
 				0D49C7EE18A773AB0031E8D2 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -585,8 +589,9 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
-				INFOPLIST_FILE = "singcafe/singcafe-Info.plist";
+				GCC_PREFIX_HEADER = "singcafe/Supporting Files/singcafe-Prefix.pch";
+				INFOPLIST_FILE = "singcafe/Supporting Files/singcafe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7E10BFB8-6BC0-48F8-8F42-9EDA3E2C1B1C";
 				WRAPPER_EXTENSION = app;
@@ -603,8 +608,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: keita ojima (DEU3R95FP4)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
-				INFOPLIST_FILE = "singcafe/singcafe-Info.plist";
+				GCC_PREFIX_HEADER = "singcafe/Supporting Files/singcafe-Prefix.pch";
+				INFOPLIST_FILE = "singcafe/Supporting Files/singcafe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "BA26D7B6-2046-4E56-A131-01260710487C";
 				WRAPPER_EXTENSION = app;
@@ -621,12 +627,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
+				GCC_PREFIX_HEADER = "singcafe/Supporting Files/singcafe-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "UnitTests/singcafeTests-Info.plist";
+				INFOPLIST_FILE = "UnitTests/Supporting Files/singcafeTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -643,8 +649,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "singcafe/singcafe-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/singcafeTests-Info.plist";
+				GCC_PREFIX_HEADER = "singcafe/Supporting Files/singcafe-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Supporting Files/singcafeTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
